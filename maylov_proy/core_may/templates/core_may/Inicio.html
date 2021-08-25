@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core_may/css/video.css' %}">
+    <link rel="stylesheet" href="{% static 'core_may/css/galeria.css'%}">
+</head>
+<body>
+    <div><br><br></div>
+    <h1 class="title center">¿Recuerdas?</h1>
+    <div><br><br><br></div>
+    <div><video class="video" src="{% static 'core_may/img/video/FelizNavidad.mp4' %}" controls></video></div>
+    <div><br><br><br><br><br></div>
+    <a  class="contan" href="{% url 'home' %}"><button type="button" class="btn btn-success btnconf2">Volver</button></a>
+
+</body>
+</html>
