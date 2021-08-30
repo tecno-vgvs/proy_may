@@ -1,12 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Futuro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core_may/css/video.css' %}">
+    <link rel="stylesheet" href="{% static 'core_may/css/galeria.css'%}">
 </head>
 <body>
-    <h1>Futuro</h1>
+    <div class="w-100 p-3 opc">
+        <div class="container">
+          <h1 class="title center">Futuro</h1>
+          <p class="center pep">
+              Quizas no sepamos que sucedera en el futuro y eso lo hace un mar de curiosidad. Pero si podemos hacer algo, prepararnos para recibirlo ¿Y como lo hacemos? La respuesta: Estando juntos, con mucho amor, respeto, cariño y cuidados mutuos, y claro, lo hacemos y lo haremos.
+              <br>
+              Para que podamos estar juntos y disfrutarnos, casarnos, tener un hogar e incluso tener hijos. Lo que más deseo en este mundo, eres tú. 
+          </p>
+        </div>
+      </div>
+      <a class="contan" href="{% url 'home' %}"><button type="button" class="btn btn-success btnconf2">Volver</button></a>
 </body>
 </html>
