@@ -1,5 +1,10 @@
 .video{
-    width: 700px;
+    width: 400px;
     height: 350px;
-    margin: 12px;
 }
+
+.centvid {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
