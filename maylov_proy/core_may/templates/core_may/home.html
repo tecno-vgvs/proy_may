@@ -13,7 +13,8 @@
     <header>
         <!--DONDE IRA LA BARRA DE NAVEGACIÓN-->
     </header>
-    <div class="fluid opc">
+    
+    <div class="w-100 p-3 opc">
       <div class="container">
         <h1 class="title center">Henlo Maylove</h1>
         <p class="center pep">Este es tu regalo de cumpleaños y de verdad espero que te guste.
@@ -21,112 +22,119 @@
         </p>
       </div>
     </div>
-    <div><br><br><br></div>
+    
+    <!--SEPARADOR-->
+    <div><br><br></div>
 
-    <section>      
-      <div class="content">
-            </div>
-            <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <div class="container">
-                      <div class="dsp-card">
-                          <div class="dsp-card">
-                            <div class="card">
-                              <img src="{% static 'core_may/img/foto1.jpeg' %}" class="imga" alt="">
-                              <div class="card-body">
-                                <h4 class="center">Pasado</h4>
-                                <div class="card-body">
-                                  <p class="center">¿Quieres recordar un poco?</p>
-                                  <a href="{% url 'inicio' %}"><button type="button" class="btn btn-success btnconfig">Ver pasado</button></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="container">
-                      <div class="dsp-card">
-                          <div class="dsp-card">
-                            <div class="card">
-                              <img src="{% static 'core_may/img/foto2.jpeg' %}" class="imga" alt="">
-                              <div class="card-body">
-                                <h4 class="center">Presente</h4>
-                                <div class="card-body">
-                                  <p class="center">Ya sabes de nuestro presente <br> ¿Por que no saber más?</p>
-                                  <a href="{% url 'presente' %}"><button type="button" class="btn btn-success btnconfig">Ver presente</button></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="container">
-                      <div class="dsp-card">
-                          <div class="dsp-card">
-                            <div class="card">
-                              <img src="{% static 'core_may/img/foto3.jpeg' %}" class="imga" alt="">
-                              <div class="card-body">
-                                <h4 class="center">Futuro</h4>
-                                <div class="card-body">
-                                  <p class="center">¿Que nos espera?</p>
-                                  <a href="{% url 'futuro' %}"><button type="button" class="btn btn-success btnconfig">Ver futuro</button></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+    <div class="container w-auto">
+      <h2 class="title center"> Pasado
+      </h2>
+      <br>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+      <a href="{% url 'inicio' %}" class="linka"><div class="card" style="width: 18rem;">
+        <img src="{% static 'core_may/img/foto1.jpeg' %}" class="card-img-top imga" alt="...">
+        <div class="card-body">
+          <p class="card-text">Vivimos muchos momentos juntos y son maravillosos, recordemos un poco más</p>
         </div>
-    </section>
-
+      </div></a>
+    </div>
+    
+    <!--SEPARADOR-->
     <div>
       <br><br><br>
     </div>
-    <div>
 
-<div class="container h-auto pad-bot">
-  <h2 class="title center"> Te amo
-  </h2>
-  <div class="container">
-    <div class="dsp-card">
-        <div class="dsp-card">
-          <div class="card">
-            <img src="{% static 'core_may/img/cartamia.jpeg' %}" class="imga" alt="">
+    <div class="container w-auto">
+      <h2 class="title center"> Presente
+      </h2>
+      <br>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+        <a href="{% url 'presente' %}" class="linka">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'core_may/img/foto2.jpeg' %}" class="card-img-top imga" alt="...">
             <div class="card-body">
-              <h4 class="center">Te amo demasiado</h4>
-              <div class="card-body">
-                <p class="center">De verdad que te amo demasiado amor, eres lo mejor que me ha pasado en mi vida.</p>
-              </div>
+              <p class="card-text">Estamos juntos y hay que seguir juntos</p>
             </div>
           </div>
-        </div>
+        </a>
     </div>
-  </div>
-</div>
 
+        <!--SEPARADOR-->
+        <div><br><br><br></div>
+
+    <div class="container w-auto">
+      <h2 class="title center"> Futuro
+      </h2>
+      <br>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+      <a href="{% url 'futuro' %}" class="linka">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'core_may/img/foto3.jpeg' %}" class="card-img-top imga" alt="...">
+          <div class="card-body">
+            <p class="card-text">No sabemos exactamente lo que nos espera en el futuro, pero sabemos algo, si estamos juntos, todo estara bien.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--SEPARADOR-->
+    <div><br><br><br></div>
+
+    <div class="container w-auto">
+      <h2 class="title center"> Te amo
+      </h2>
+      <br>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'core_may/img/cartamia.jpeg' %}" class="card-img-top imga" alt="...">
+        <div class="card-body">
+          <p class="card-text">Te amo demasiado Mayra, eres lo mejor que me ha pasado en la vida</p>
+        </div>
+      </div>
+    </div>
+        <!--SEPARADOR-->
+        <div><br><br><br></div>
+
+    <div class="container w-auto">
+      <h2 class="title center"> Y se que tu me amas
+      </h2>
+      <br>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'core_may/img/cartamayra.jpeg' %}" class="card-img-top imga" alt="...">
+        <div class="card-body">
+          <p class="card-text">¿Por que lo se? como no saberlo, si me lo demuestras cada dia, me haces reir, me alegras los días, y es maravilloso, es hermoso recibir tu amor.</p>
+        </div>
+      </div>
+    </div>
+    <div><br><br></div>
+    <div class="container w-auto">
+      <h2 class="title center">somos el uno para el otro
+      </h2>
+    </div>
+    <div class="mx-auto" style="width: 288px;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'core_may/img/arcoiris&jake.jpg' %}" class="card-img-top imga" alt="...">
+        <div class="card-body">
+          <p class="card-text">Así como Arcoiris y Jake, somos el uno para el otro.</p>
+        </div>
+      </div>
+    </div>
+    <div><br><br><br></div>
 <!--<div>
   <h2 class="tittle center">¿Y este boton? :0</h2>
   <a href="" target="blank"><button type="button" class="btn btn-success btnconfig">Abreme :D</button></a>
 </div>-->
 
-    </div>
-    <footer>
-        <section>
-            <div class="final"></div>
-        </section>
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    
 </body>
 </html>
